@@ -28,10 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            panel_title.SuspendLayout();
+            panel_base.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panel_title
+            // 
+            panel_title.Size = new Size(812, 65);
+            // 
+            // panel_base
+            // 
+            panel_base.Size = new Size(812, 508);
+            // 
+            // panel_body
+            // 
+            panel_body.Size = new Size(812, 443);
+            // 
+            // panel_title_system
+            // 
+            panel_title_system.Location = new Point(594, 0);
+            // 
+            // hahaha_form_main
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(832, 528);
+            Name = "hahaha_form_main";
+            Text = "Form1";
+            FormClosing += hahaha_form_main_FormClosing;
+            Load += hahaha_form_main_Load;
+            panel_title.ResumeLayout(false);
+            panel_base.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

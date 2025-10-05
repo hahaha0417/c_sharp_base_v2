@@ -6,5 +6,16 @@ namespace c_sharp_base
         {
             InitializeComponent();
         }
+
+        private void hahaha_form_main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hahaha_form_main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+            hahaha.Close_All();
+        }
     }
 }
