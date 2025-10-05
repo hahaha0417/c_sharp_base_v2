@@ -9,4 +9,12 @@
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\hahahalib\hahahalib\hahahalib.csproj" />
+    <ProjectReference Include="..\hahahaUIlib\hahahaUIlib\hahahaUIlib.csproj" />
+    <ProjectReference Include="..\hahaha_sub_lib\hahaha_sub_lib.csproj" />
+    <ProjectReference Include="..\project\hahaha_main_dll\hahaha_main_dll.csproj" />
+    <ProjectReference Include="..\project\hahaha_sub_dll\hahaha_sub_dll.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\hahahalib\hahahalib\hahahalib.csproj" />
+    <ProjectReference Include="..\..\hahahaUIlib\hahahaUIlib\hahahaUIlib.csproj" />
+    <ProjectReference Include="..\..\hahaha_sub_lib\hahaha_sub_lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

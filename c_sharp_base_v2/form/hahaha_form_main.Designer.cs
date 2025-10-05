@@ -1,6 +1,6 @@
 ﻿namespace c_sharp_base
 {
-    partial class Form1
+    partial class hahaha_form_main
     {
         /// <summary>
         ///  Required designer variable.
