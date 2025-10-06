@@ -18,7 +18,7 @@ namespace c_sharp_base_v2
                 Thread.Sleep(500);
                 ha.Form_Main!.Invoke(new Action(() =>
                 {
-                    hahaha_exe.Form_Main_!.label_title.Text = app.Name_Title;
+                    label_title.Text = app.Name_Title;
                 }));
             }).Start();
         }
@@ -26,8 +26,11 @@ namespace c_sharp_base_v2
         private void hahaha_form_main_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = false;
-            ha.Log_Form_Main!.LogDebug("Ãö³¬");
-            hahaha_exe.Close_All();
+            // ------------------------------------------
+            // Ãö³¬
+            // ------------------------------------------
+            ha.Flow_Close!.Close_All();
+            
         }
     }
 }

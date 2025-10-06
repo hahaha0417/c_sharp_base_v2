@@ -28,13 +28,13 @@ namespace c_sharp_base_v2
             // ------------------------------------------
             // 初始化
             // ------------------------------------------
-            ha.Log_Form_Main!.LogDebug("初始化");
-            hahaha_exe.Initial_All();
+            ha.Flow_Initial!.Initial_All();
+
             // ------------------------------------------
             // 初始化 UI
             // ------------------------------------------
-            ha.Log_Form_Main!.LogDebug("初始化UI");
-            hahaha_exe.Initial_UI_All();
+            ha.Flow_Initial!.Initial_UI_All();
+            
 
             // ------------------------------------------
             // 

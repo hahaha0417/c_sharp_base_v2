@@ -26,6 +26,8 @@ namespace c_sharp_base_v2
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
+        public static hahaha_flow_initial? Flow_Initial_ = null;
+        public static hahaha_flow_close? Flow_Close_ = null;
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
@@ -95,7 +97,11 @@ namespace c_sharp_base_v2
         // ---------------------------------------------------------------
         public static int Initial_Environment()
         {
-            
+            Flow_Initial_ = new hahaha_flow_initial();
+            Flow_Close_ = new hahaha_flow_close();
+
+            ha.Flow_Initial = Flow_Initial_;
+            ha.Flow_Close = Flow_Close_;
 
 
 
