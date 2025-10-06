@@ -1,4 +1,4 @@
-namespace c_sharp_base
+namespace c_sharp_base_v2
 {
     public static partial class hahaha_main_dll
     {

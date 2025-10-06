@@ -1,11 +1,13 @@
-namespace c_sharp_base
+using Microsoft.Extensions.Logging;
+
+namespace c_sharp_base_v2
 {
 
     // ---------------------------------------------------------------
     //
     // ---------------------------------------------------------------
 
-    public static partial class hahaha
+    public static partial class hahaha_exe
     {
         // ---------------------------------------------------------------
         //
@@ -16,9 +18,11 @@ namespace c_sharp_base
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
+        public static hahaha_setting_box? Setting_Box_ = null;
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
+        public static ILogger? Log_Form_Main_ = null;
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
@@ -32,10 +36,26 @@ namespace c_sharp_base
         // ---------------------------------------------------------------
         public static int Initial_Environment_All()
         {
+            Setting_Box_ = new hahaha_setting_box();
+
+            if (Setting_Box_.Load_All() != 0)
+            {
+                Setting_Box_.Save_All();
+            }
+
+            ha.Setting = Setting_Box_;
+
+            hahaha_sub_lib.Log_.Create($"{ha.Setting.System.Dir_Environment}/{ha.Setting.System.Name_Config}/nlog.config");
+
+            Log_Form_Main_ = hahaha_sub_lib.Log_.Create_Log<hahaha_form_main>();
+            ha.Log_Form_Main = Log_Form_Main_;
+            // ---------------------------------------------------------------
+            //
+            // ---------------------------------------------------------------
             hahaha_sub_lib.Initial_Environment();
             hahaha_main_dll.Initial_Environment();
             hahaha_sub_dll.Initial_Environment();
-            hahaha.Initial_Environment();
+            hahaha_exe.Initial_Environment();
 
             return 0;
         }
@@ -44,7 +64,7 @@ namespace c_sharp_base
             hahaha_sub_lib.Initial();
             hahaha_main_dll.Initial();
             hahaha_sub_dll.Initial();
-            hahaha.Initial();
+            hahaha_exe.Initial();
 
             return 0;
         }
@@ -54,14 +74,14 @@ namespace c_sharp_base
             hahaha_sub_lib.Initial_UI();
             hahaha_main_dll.Initial_UI();
             hahaha_sub_dll.Initial_UI();
-            hahaha.Initial_UI();
+            hahaha_exe.Initial_UI();
 
             return 0;
         }
 
         public static int Close_All()
         {
-            hahaha.Close();
+            hahaha_exe.Close();
             hahaha_sub_dll.Close();
             hahaha_main_dll.Close();
             hahaha_sub_lib.Close();
@@ -75,6 +95,11 @@ namespace c_sharp_base
         // ---------------------------------------------------------------
         public static int Initial_Environment()
         {
+            
+
+
+
+
             return 0;
         }
 

@@ -1,4 +1,6 @@
-namespace c_sharp_base
+using Microsoft.Extensions.Logging;
+
+namespace c_sharp_base_v2
 {
     internal static class Program
     {
@@ -15,21 +17,24 @@ namespace c_sharp_base
             // ------------------------------------------
             // 初始化環境
             // ------------------------------------------
-            hahaha.Initial_Environment_All();
+            hahaha_exe.Initial_Environment_All();
             hahaha_form_main form_main_ = new hahaha_form_main();
-            hahaha.Form_Main_ = form_main_;
+            hahaha_exe.Form_Main_ = form_main_;
             ha.Form_Main = form_main_;
+            ha.Log_Form_Main!.LogDebug("初始化環境");
 
 
 
             // ------------------------------------------
             // 初始化
             // ------------------------------------------
-            hahaha.Initial_All();
+            ha.Log_Form_Main!.LogDebug("初始化");
+            hahaha_exe.Initial_All();
             // ------------------------------------------
             // 初始化 UI
             // ------------------------------------------
-            hahaha.Initial_UI_All();
+            ha.Log_Form_Main!.LogDebug("初始化UI");
+            hahaha_exe.Initial_UI_All();
 
             // ------------------------------------------
             // 

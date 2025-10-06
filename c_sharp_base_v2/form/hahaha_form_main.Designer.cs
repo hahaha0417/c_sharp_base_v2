@@ -1,4 +1,4 @@
-﻿namespace c_sharp_base
+﻿namespace c_sharp_base_v2
 {
     partial class hahaha_form_main
     {

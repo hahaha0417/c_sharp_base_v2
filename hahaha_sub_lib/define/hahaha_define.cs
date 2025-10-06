@@ -1,4 +1,6 @@
-namespace c_sharp_base
+using Microsoft.Extensions.Logging;
+
+namespace c_sharp_base_v2
 {
     public static partial class ha
     {
@@ -8,10 +10,12 @@ namespace c_sharp_base
         public static Form? Form_Main = null;
 
 
+        public static ILogger? Log_Form_Main = null;
+        public static hahaha.hahaha_setting_box? Setting = null;
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
-   
+
     }
     // ---------------------------------------------------------------
     //
@@ -21,7 +25,11 @@ namespace c_sharp_base
         // ---------------------------------------------------------------
         //
         // ---------------------------------------------------------------
-        
+        // ---------------------------------------------------------------
+        //
+        // ---------------------------------------------------------------
+        public static hahahalib.hahaha_log Log_ = new hahahalib.hahaha_log();
+        public static hahahalib.hahaha_json Json_ = new hahahalib.hahaha_json();
 
 
         // ---------------------------------------------------------------
@@ -61,6 +69,8 @@ namespace c_sharp_base
 
         public static int Close()
         {
+            Log_.Close();
+
             return 0;
         }
 
