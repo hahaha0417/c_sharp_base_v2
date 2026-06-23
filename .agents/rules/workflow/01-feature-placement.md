@@ -4,18 +4,18 @@
 
 ### 解決方案
 
-- `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2.sln`
+- `c_sharp_base_v2.sln`
 - 目前主要專案：
-  - `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\c_sharp_base_v2.csproj`
-  - `D:\vs\c#\c_sharp_base_v2\hahahalib\hahahalib\hahahalib.csproj`
-  - `D:\vs\c#\c_sharp_base_v2\hahahaUIlib\hahahaUIlib\hahahaUIlib.csproj`
-  - `D:\vs\c#\c_sharp_base_v2\hahaha_sub_lib\hahaha_sub_lib.csproj`
-  - `D:\vs\c#\c_sharp_base_v2\project\hahaha_main_dll\hahaha_main_dll.csproj`
-  - `D:\vs\c#\c_sharp_base_v2\project\hahaha_sub_dll\hahaha_sub_dll.csproj`
+  - `c_sharp_base_v2/c_sharp_base_v2.csproj`
+  - `hahahalib/hahahalib/hahahalib.csproj`
+  - `hahahaUIlib/hahahaUIlib/hahahaUIlib.csproj`
+  - `hahaha_sub_lib/hahaha_sub_lib.csproj`
+  - `project/hahaha_main_dll/hahaha_main_dll.csproj`
+  - `project/hahaha_sub_dll/hahaha_sub_dll.csproj`
 
 ### 應用組裝專案
 
-- `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2`
+- `c_sharp_base_v2/`
 - 主要資料夾：
   - `Program.cs`：主啟動順序與主頁建立
   - `box/`：設定或互動封裝
@@ -24,15 +24,15 @@
 
 ### 應用畫面專案
 
-- `D:\vs\c#\c_sharp_base_v2\project\hahaha_main_dll`
+- `project/hahaha_main_dll/`
   - `form/`：目前主頁 `hahaha_form_main` 所在位置
 
 ### 核心庫
 
-- `D:\vs\c#\c_sharp_base_v2\hahahalib`
+- `hahahalib/`
   - 基礎能力與共用功能
   - 已有方向：`thread/`、`thread_pool/`、`timer/`、`log/`、`json/`、`sleep/`、`form/`、`ui/`
-- `D:\vs\c#\c_sharp_base_v2\hahahaUIlib`
+- `hahahaUIlib/`
   - 可重用 UI 控制項、視覺元件、表單外觀封裝
 
 ## 落點判斷

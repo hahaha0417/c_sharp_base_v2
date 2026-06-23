@@ -4,7 +4,7 @@
 
 - 本檔只描述設定頁 `hahaha_form_setting` 自己的處理方式。
 - 目前 solution 內沒有 `hahaha_form_setting` 實體檔；本檔屬預留規則，只有重新加入該頁時才套用。
-- 設定頁共用模式另讀 `D:\vs\c#\c_sharp_base_v2\.agents\rules\form\setting-form.md`。
+- 設定頁共用模式另讀 `.agents/rules/form/setting-form.md`。
 
 ## 結構
 

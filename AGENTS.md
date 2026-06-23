@@ -1,6 +1,6 @@
 # AGENTS
 
-本檔是 `D:\vs\c#\c_sharp_base_v2` 的規則入口，適用於本 C# WinForms 解決方案。
+本檔是根目錄規則入口，適用於本 C# WinForms 解決方案。
 
 ## 讀取原則
 
@@ -76,14 +76,14 @@
   - 再讀 `.agents/rules/form/main-form.md`
   - 再讀 `.agents/rules/form/general-form.md`
   - 先讀 `.agents/rules/workflow/02-form-initialization.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\Program.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\define\hahaha_define.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\flow\`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\project\hahaha_main_dll\form\`
+  - 再讀 `c_sharp_base_v2/Program.cs`
+  - 再讀 `c_sharp_base_v2/define/hahaha_define.cs`
+  - 再讀 `c_sharp_base_v2/flow/`
+  - 再讀 `project/hahaha_main_dll/form/`
   - `hahaha_define.cs` 是全專案共用物件入口
-  - `Program.cs` 負責主啟動順序與主頁建立；目前 `hahaha_form_main` 實作位於 `project\hahaha_main_dll\form\`
+  - `Program.cs` 負責主啟動順序與主頁建立；目前 `hahaha_form_main` 實作位於 `project/hahaha_main_dll/form/`
   - 主頁規則、一般頁面規則已抽到 `.agents/rules/form/`，後續不要把單一 `.cs` 檔當唯一規範來源
-  - 若是某個頁面自己的獨立規則，讀 `D:\vs\c#\c_sharp_base_v2\.agent_customs\rules\` 下對應分類
+  - 若是某個頁面自己的獨立規則，讀 `.agent_customs/rules/` 下對應分類
   - `hahaha_form_main` 的處理方式已抽到 `.agent_customs/rules/form/`
   - `hahaha_form_test`、`hahaha_form_setting` 規則目前屬預留頁面，只有對應 form 實際存在時才套用
 - 啟動即顯示 form / 初始化建立子表單：
@@ -91,31 +91,31 @@
   - 再讀 `.agents/rules/form/main-form.md`
   - 再讀 `.agents/rules/form/general-form.md`
   - 先讀 `.agents/rules/workflow/02-form-initialization.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\Program.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\define\hahaha_define.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\flow\`
+  - 再讀 `c_sharp_base_v2/Program.cs`
+  - 再讀 `c_sharp_base_v2/define/hahaha_define.cs`
+  - 再讀 `c_sharp_base_v2/flow/`
 - 共用工具、thread、timer、log、json：
   - 先讀 `.agents/rules/workflow/00-project-policy.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\hahahalib\hahahalib\`
+  - 再讀 `hahahalib/hahahalib/`
 - 設定容器、設定載入、設定共用入口：
   - 先讀 `.agents/rules/setting/setting-box.md`
   - 再讀 `.agents/rules/form/setting-form.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\define\hahaha_define.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\c_sharp_base_v2\box\hahaha_setting_box.cs`
+  - 再讀 `c_sharp_base_v2/define/hahaha_define.cs`
+  - 再讀 `c_sharp_base_v2/box/hahaha_setting_box.cs`
   - 設定容器的建立與掛載入口以 `hahaha_define.cs` 為準
 - `hahaha_thread_command` / `hahaha_thread_pause` 子類別、背景處理、UI thread 回拋：
   - 先讀 `.agents/rules/thread/thread-command.md`
   - 再讀 `.agents/rules/thread/thread-pause.md`
   - 先讀 `.agents/rules/workflow/03-thread-command.md`
   - 再讀 `.agents/rules/workflow/04-thread-pause.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\hahahalib\hahahalib\thread\hahaha_thread_command.cs`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\hahahalib\hahahalib\thread\hahaha_thread_pause.cs`
+  - 再讀 `hahahalib/hahahalib/thread/hahaha_thread_command.cs`
+  - 再讀 `hahahalib/hahahalib/thread/hahaha_thread_pause.cs`
   - 最後才讀需求直接相關專案內的 `thread/`、`flow/` 或 form 事件掛接檔
   - `hahaha_thread_command_timer_test.cs` 的共用處理方法已抽到 `.agents/rules/thread/thread-command.md`，後續不要把它當唯一規範來源
   - `hahaha_thread_pause_timer_test.cs` 的共用處理方法已抽到 `.agents/rules/thread/thread-pause.md`，後續不要把它當唯一規範來源
 - 可重用 UI 元件、控制項、表單基底、視覺封裝：
   - 先讀 `.agents/rules/workflow/01-feature-placement.md`
-  - 再讀 `D:\vs\c#\c_sharp_base_v2\hahahaUIlib\hahahaUIlib\`
+  - 再讀 `hahahaUIlib/hahahaUIlib/`
   - 若功能其實已在 `hahahalib` 內，優先沿用既有做法
 - 表單修改：
   - 先讀對應 `.cs`
