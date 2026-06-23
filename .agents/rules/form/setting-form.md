@@ -33,5 +33,5 @@
 - reload 方法只回填目前允許編輯的欄位。
 - save 方法只回寫目前允許編輯的欄位，再呼叫對應的 `Save_xxx()`。
 - `取消` 按鈕流程為重新載入設定後再回填畫面。
-- 若 reload 流程內有重新 `Load_All()`，可在 reload 後重新指定 `ha.Setting = hahaha.Setting_Box_`。
-- save 流程若只是把畫面值回寫到 `hahaha.Setting_Box_` 再儲存，不要額外重設 `ha.Setting`。
+- 若 reload 流程內有重新 `Load_All()`，可在 reload 後重新指定 `ha.Setting = hahaha_exe.Setting_Box_`。
+- save 流程若只是把畫面值回寫到 `hahaha_exe.Setting_Box_` 再儲存，不要額外重設 `ha.Setting`。

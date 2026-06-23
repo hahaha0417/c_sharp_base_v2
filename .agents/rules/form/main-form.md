@@ -13,5 +13,5 @@
 ## 實作規則
 
 - 主頁 `Form_Load` 可啟動必要的背景初始化流程，但 UI 回寫必須透過 `Invoke(...)` 或 `BeginInvoke(...)` 回主執行緒。
-- 主頁標題若由系統名稱統一控制，優先回寫到 `hahaha.Form_Main_!.label_title.Text`。
-- 主頁 `FormClosing` 要負責收尾全域資源，統一路徑是呼叫 `hahaha.Close()`。
+- 主頁標題若由系統名稱統一控制，優先回寫目前 form 自己的 `label_title.Text`；若從背景執行緒更新，透過 `ha.Form_Main!.Invoke(...)` 回主執行緒。
+- 主頁 `FormClosing` 要負責收尾全域資源，統一路徑是呼叫 `ha.Flow_Close!.Close_All()`。

@@ -5,7 +5,7 @@
 - 本專案以 C# / .NET WinForms 為主，不採 Laravel / Web 專案流程。
 - 共用邏輯、工具、thread、timer、log、json、form base，優先放 `hahahalib`。
 - 可重用 UI 元件、控制項、外觀封裝，優先放 `hahahaUIlib`。
-- `c_sharp_base` 應優先負責應用組裝、流程串接、畫面入口，不承擔過多可抽離的共用能力。
+- `c_sharp_base_v2` 與 `project/` 內應用專案應優先負責應用組裝、流程串接、畫面入口，不承擔過多可抽離的共用能力。
 
 ## 依賴順序
 

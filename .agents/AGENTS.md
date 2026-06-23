@@ -1,10 +1,10 @@
 # .agents AGENTS
 
-本目錄提供 `D:\vs\c#\c_sharp_base` 的代理規則輔助內容。
+本目錄提供 `D:\vs\c#\c_sharp_base_v2` 的代理規則輔助內容。
 
 ## 使用原則
 
-- 先讀 `D:\vs\c#\c_sharp_base\AGENTS.md`，本檔只補充 `.agents` 目錄用途。
+- 先讀 `D:\vs\c#\c_sharp_base_v2\AGENTS.md`，本檔只補充 `.agents` 目錄用途。
 - 依賴選擇、專案架構分析、核心庫優先順序，以根目錄 `AGENTS.md` 為準。
 - 本專案是 C# WinForms 專案，`.agents` 內只保留對 WinForms、`.NET`、`hahahalib`、`hahahaUIlib` 有幫助的內容。
 - 與 Laravel、PHP、Blade、Tailwind、Eloquent、Artisan、Octane 直接相關的規則與 skill，不應再作為本專案依據。
@@ -24,6 +24,7 @@
 
 ## 核心方向
 
-- 共用基礎能力優先回到 `D:\vs\c#\c_sharp_base\hahahalib`
-- 可重用 UI 能力優先回到 `D:\vs\c#\c_sharp_base\hahahaUIlib`
+- 本解決方案目前包含 `c_sharp_base_v2`、`hahahalib`、`hahahaUIlib`、`hahaha_sub_lib`、`project/hahaha_main_dll`、`project/hahaha_sub_dll`
+- 共用基礎能力優先回到 `D:\vs\c#\c_sharp_base_v2\hahahalib`
+- 可重用 UI 能力優先回到 `D:\vs\c#\c_sharp_base_v2\hahahaUIlib`
 - `.agents` 只負責規則與輔助，不應凌駕實際程式庫結構

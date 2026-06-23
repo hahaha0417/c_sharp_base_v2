@@ -2,7 +2,7 @@
 
 ## 適用範圍
 
-- 本檔適用於 `c_sharp_base/box/hahaha_setting_box.cs` 這類設定檔容器。
+- 本檔適用於 `c_sharp_base_v2/box/hahaha_setting_box.cs` 這類設定檔容器。
 - 設定容器負責集中持有各設定類別，並提供整包 `Load_All()` / `Save_All()` 的統一入口。
 
 ## 容器結構
@@ -21,10 +21,10 @@
 ## 使用方式
 
 - 設定容器的建立集中放在 `hahaha_define.cs` 的初始化流程處理，不要在各 form、thread 或功能類別內各自 new 一份。
-- `Initial_Environment()` 內先建立 `hahaha.Setting_Box_ = new hahaha_setting_box()`。
+- `Initial_Environment()` 內先建立 `hahaha_exe.Setting_Box_ = new hahaha_setting_box()`。
 - 建立後先呼叫 `Load_All()`；若載入失敗，再補一次 `Save_All()` 產生預設設定檔。
 - 全專案共用入口維持掛到 `ha.Setting`，讓其他位置優先透過 `ha.Setting` 讀取設定。
-- 若設定物件有重新 `Load_All()` 或重新建立，才重新指定 `ha.Setting = hahaha.Setting_Box_`。
+- 若設定物件有重新 `Load_All()` 或重新建立，才重新指定 `ha.Setting = hahaha_exe.Setting_Box_`。
 - 單純修改欄位後呼叫 `Save_All()` 時，不要重設 `ha.Setting` 參考。
 
 ## 擴充規則

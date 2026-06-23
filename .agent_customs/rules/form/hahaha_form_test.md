@@ -3,6 +3,7 @@
 ## 適用範圍
 
 - 本檔只描述測試頁 `hahaha_form_test` 自己的處理方式。
+- 目前 solution 內沒有 `hahaha_form_test` 實體檔；本檔屬預留規則，只有重新加入該頁時才套用。
 
 ## 初始化
 
@@ -20,4 +21,4 @@
 ## 關閉
 
 - `FormClosing` 維持 `e.Cancel = false;`。
-- 測試頁不負責全域關閉流程，也不要在此頁內直接呼叫 `hahaha.Close()`。
+- 測試頁不負責全域關閉流程，也不要在此頁內直接呼叫 `ha.Flow_Close!.Close_All()`。

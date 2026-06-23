@@ -3,7 +3,8 @@
 ## 適用範圍
 
 - 本檔只描述設定頁 `hahaha_form_setting` 自己的處理方式。
-- 設定頁共用模式另讀 `D:\vs\c#\c_sharp_base\.agents\rules\form\setting-form.md`。
+- 目前 solution 內沒有 `hahaha_form_setting` 實體檔；本檔屬預留規則，只有重新加入該頁時才套用。
+- 設定頁共用模式另讀 `D:\vs\c#\c_sharp_base_v2\.agents\rules\form\setting-form.md`。
 
 ## 結構
 
@@ -24,11 +25,11 @@
 - `Form_Load` 時設定頁標題為 `設定`，並呼叫 `Setting_Reload_All()` 回填畫面。
 - `Setting_Reload_All()` 只回填目前允許編輯的欄位。
 - `Setting_Save_All()` 只回寫目前允許編輯的欄位，再呼叫對應 `Save_xxx()`。
-- `Setting_Save_All()` 將參數回寫到 `hahaha.Setting_Box_` 後直接儲存，不要在 save 流程內重設 `ha.Setting`。
+- `Setting_Save_All()` 將參數回寫到 `hahaha_exe.Setting_Box_` 後直接儲存，不要在 save 流程內重設 `ha.Setting`。
 - `取消` 按鈕流程為重新 `Load_All()` 後再呼叫 `Setting_Reload_All()`。
-- 只有重新 `Load_All()` 後，才重新指定 `ha.Setting = hahaha.Setting_Box_`。
+- 只有重新 `Load_All()` 後，才重新指定 `ha.Setting = hahaha_exe.Setting_Box_`。
 
 ## 關閉
 
 - `FormClosing` 維持 `e.Cancel = false;`。
-- 設定頁不負責全域關閉流程，也不要在此頁內直接呼叫 `hahaha.Close()`。
+- 設定頁不負責全域關閉流程，也不要在此頁內直接呼叫 `ha.Flow_Close!.Close_All()`。
