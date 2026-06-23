@@ -1,0 +1,87 @@
+這是C# winform專案
+幫我修改
+D:\vs\c#\c_sharp_base\.agents
+AGENTS.md
+
+主要以
+D:\vs\c#\c_sharp_base\hahahalib
+D:\vs\c#\c_sharp_base\hahahaUIlib
+為核心庫進行搭建
+
+.agents
+laravel相關的的md檔幫我移除(c#可用的保留)
+
+D:\vs\c#\c_sharp_base\c_sharp_base
+幫我分析專案架構，我要用
+hahahalib模組進行開發
+其次才是nuget套件
+寫回AGENTS.md
+
+------------------------------------------------------
+
+讀取AGENTS.md
+D:\vs\c#\c_sharp_base\c_sharp_base\form\hahaha_form_main.cs
+D:\vs\c#\c_sharp_base\c_sharp_base\form\hahaha_form_test.cs
+規則抽出
+寫回AGENTS.md
+
+------------------------------------------------------
+
+讀取AGENTS.md
+.agents\rules\workflow\02-form-initialization.md
+單獨頁面custom規則抽出
+寫到
+.agent_customs\customs\form
+寫回AGENTS.md
+
+------------------------------------------------------
+
+讀取AGENTS.md
+新增表單hahaha_form_setting，在
+form\
+參考hahaha_form_main
+
+參考hahaha_form_setting tabPage1
+新增其他tab，我要處理
+box\hahaha_setting_box.cs
+這些物件(一個物件一個tab)參數的存讀
+要加在我的Tab_Controll_Base_Main(你移除了)
+下方panel要有儲存和取消按鈕
+panel_system_top幫我移除
+不要用propertyGrid_system，我喜歡panel當底:D
+tab和文字按鈕要中文
+標題輸入框要同一行 
+font size 16pt
+textBox_system_dir_environment後面幫我加"..."按鈕，用以選資料夾路徑
+layout參考我擺放，幫我對齊就好，不要亂搬我位置
+
+------------------------------------------------------
+
+讀取AGENTS.md
+將hahaha_form_setting處理方式寫回
+.agents對應位置
+共用規則抽出寫到
+.agents\rules\setting
+.agents\rules\setting\setting-form.md
+移到
+.agents\rules\form
+
+------------------------------------------------------
+
+讀取AGENTS.md
+setting\hahaha_setting_system.cs
+幫我註解
+其中
+public string Name_Setting { get; set; } = "setting";
+public string Name_Config { get; set; } = "config";
+public string Name_Log { get; set; } = "log";
+public string Name_Class { get; set; } = "system";
+public string Name_File { get; set; } = "system.json";
+內建設定，不要有輸入框
+
+public string Dir_Environment { get; set; } = "C:/c_sharp_hahaha_setting/base";
+你沒幫我註解
+
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
