@@ -5,6 +5,7 @@
 ## 讀取原則
 
 - 每次處理需求前，先讀本檔。
+- 每次讀取 `AGENTS.md` 時，同步載入分析快取 `cache_analysis/analysis-cache.md`。
 - 先縮小需求範圍，再打開直接相關檔案，不要一開始全專案掃描。
 - `.agents/` 只保留對本 C# WinForms 專案仍有用的規則。
 - `.agent_customs/rules/` 放各自獨立頁面或各功能自己專屬的規則，方便各頁面獨立處理。
@@ -125,11 +126,12 @@
 ## 分析順序
 
 1. `AGENTS.md`
-2. `.agents/AGENTS.md`
-3. 需求對應規則檔
-4. `c_sharp_base_v2.sln`
-5. 需求直接相關的 `.csproj`
-6. `hahahalib` / `hahahaUIlib` 對應模組
-7. 最後才打開 `c_sharp_base_v2` 與 `project/` 內直接相關的 form、box、flow、thread、流程檔
+2. `cache_analysis/analysis-cache.md`
+3. `.agents/AGENTS.md`
+4. 需求對應規則檔
+5. `c_sharp_base_v2.sln`
+6. 需求直接相關的 `.csproj`
+7. `hahahalib` / `hahahaUIlib` 對應模組
+8. 最後才打開 `c_sharp_base_v2` 與 `project/` 內直接相關的 form、box、flow、thread、流程檔
 
 避免一開始就逐檔掃描整個專案，也不要把 `bin/`、`obj/` 當主要分析來源。
